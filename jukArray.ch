@@ -162,6 +162,13 @@ static function aPivot2D(aEntrada, nOrdLin, nOrdCol, nColTarget)
 	next
 return aPivotado
 
+/*/{Protheus.doc} aAppendCol
+	Funcao que apenda matrizes uma a direita da outra (em coluna)
+	@type static function
+	@author Julio Carvalho Barberino
+	@since 08/12/2025
+	@version 0
+/*/
 static function aAppendCol(aTabOriE, aTabOriD)
 	local aRet := aClone(aTabOriE)
 	local nRow
@@ -174,6 +181,13 @@ static function aAppendCol(aTabOriE, aTabOriD)
 	next
 return aRet
 
+/*/{Protheus.doc} aAppendLin
+	Funcao que apenda matrizes uma abaixo da outra (em linha)
+	@type static function
+	@author Julio Carvalho Barberino
+	@since 08/12/2025
+	@version 0
+/*/
 static function aAppendLin(aTabOriUp, aTabOriDow)
 	local aRet := aClone(aTabOriUp)
 	local nRow
@@ -183,6 +197,13 @@ static function aAppendLin(aTabOriUp, aTabOriDow)
 	next
 return aRet
 
+/*/{Protheus.doc} aTranspose
+	Funcao que aplica tranposição matricial
+	@type static function
+	@author Julio Carvalho Barberino
+	@since 08/12/2025
+	@version 0
+/*/
 static function aTranspose(aRec)
 	local aRet := {}
 	local nCol
